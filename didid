@@ -1,0 +1,5 @@
+require_once('Git.php);
+$reepo = Git::open('path/to/repo'); // -or- Git::create('path/to/repo')
+$reepo -> add('.');
+$reepo -> commit('Some commit message');
+$reepo -> ('orgin', 'master');
